@@ -1,0 +1,35 @@
+{
+  // Monkey C settings belong to the app folder, not the repo root. The
+  // extension resolves a project by joining its settings onto the *workspace
+  // folder*, so the folder that owns manifest.xml has to be a workspace folder
+  // — see Garmin.code-workspace and the README.
+  //
+  // No "monkeyC.jungleFiles" here on purpose: the default, "monkey.jungle",
+  // resolves correctly now that this folder is the project root.
+
+  // Java runtime used by the Monkey C compiler and language server.
+  // Backslashes must be escaped here — this is JSON, not an .ini file.
+  // Window-scoped, so in the multi-root workspace the copy in
+  // Garmin.code-workspace is the one that applies; this one covers opening
+  // the app folder directly as a single folder.
+  "monkeyC.javaPath": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.12.8-hotspot",
+
+  // Signing identity, deliberately stored outside the repo so it can
+  // never be committed. Back this file up — losing it means you cannot
+  // publish updates to an existing store listing.
+  "monkeyC.developerKeyPath": "C:\\Users\\lasse\\.garmin\\developer_key",
+
+  // Catch type errors at build time rather than on-device.
+  "monkeyC.typeCheckLevel": "Strict",
+
+  "[monkeyc]": {
+    "editor.defaultFormatter": "markw65.prettier-extension-monkeyc",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+
+  "files.exclude": {
+    "**/bin": true
+  }
+}

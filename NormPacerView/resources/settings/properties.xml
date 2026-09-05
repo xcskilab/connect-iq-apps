@@ -1,0 +1,8 @@
+<properties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!--
+        Empty means "use the built-in label" from strings.xml, so the
+        translated default survives until the rider types something.
+    -->
+    <property id="customLabel" type="string"></property>
+    <property id="showLabel" type="boolean">true</property>
+</properties>

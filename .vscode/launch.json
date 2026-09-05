@@ -1,0 +1,17 @@
+{
+  // Deliberately empty — the repo root is NOT a Connect IQ project.
+  //
+  // This file used to hold the extension's default "Run App" / "Run Tests"
+  // configurations. In the multi-root workspace they showed up in the Run and
+  // Debug dropdown as "Run App (Garmin (repo root))", and launching one made
+  // the Monkey C extension look for a jungle at Garmin\monkey.jungle:
+  //
+  //     Connect IQ project not found. Be sure your project has a jungle file
+  //     and the project's Jungle Files setting is correct.
+  //
+  // Launch configurations for an app belong to that app's workspace folder —
+  // see StarterField/.vscode/launch.json. Keeping this file present but empty
+  // stops VS Code from offering to regenerate the broken defaults.
+  "version": "0.2.0",
+  "configurations": []
+}

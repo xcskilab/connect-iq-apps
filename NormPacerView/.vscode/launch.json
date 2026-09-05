@@ -1,0 +1,41 @@
+{
+  // Every configuration names its device explicitly. Without a "device" key
+  // the extension falls back to the last device built for, so three
+  // differently-named configurations all did the same thing.
+  //
+  // IDs are the compiler IDs from manifest.xml — authoritative copies live in
+  // %APPDATA%\Garmin\ConnectIQ\Devices\<device>\compiler.json.
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "monkeyc",
+      "request": "launch",
+      "name": "Norm Pacer — fenix 8 47/51mm (AMOLED)",
+      "device": "fenix847mm",
+      "stopAtLaunch": false
+    },
+    {
+      "type": "monkeyc",
+      "request": "launch",
+      "name": "Norm Pacer — fenix 8 Solar 47mm (MIP, 64 colors)",
+      "device": "fenix8solar47mm",
+      "stopAtLaunch": false
+    },
+    {
+      "type": "monkeyc",
+      "request": "launch",
+      "name": "Norm Pacer — Edge 850",
+      "device": "edge850",
+      "stopAtLaunch": false
+    },
+    {
+      // (:test) functions, run in the simulator's test runner.
+      "type": "monkeyc",
+      "request": "launch",
+      "name": "Norm Pacer — Run Tests (fenix 8 47/51mm)",
+      "device": "fenix847mm",
+      "runTests": true
+    }
+  ]
+}

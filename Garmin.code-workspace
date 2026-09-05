@@ -1,0 +1,30 @@
+{
+  // Open this file rather than the repo folder when working on an app.
+  //
+  // The Monkey C extension resolves a project by joining "project.manifest"
+  // from the jungle onto the *workspace folder* — unlike the compiler, which
+  // resolves it relative to the jungle file. With only the repo root open it
+  // therefore looks for Garmin\manifest.xml, finds nothing, and refuses to
+  // start a debug session even though builds succeed. Listing each app as its
+  // own workspace folder is what makes both lookups agree.
+  //
+  // Add one entry per app as the repo grows.
+  "folders": [
+    {
+      "path": "StarterField"
+    },
+    {
+      "name": "Garmin (repo root)",
+      "path": "."
+    }
+  ],
+
+  "settings": {
+    // Window-scoped, so it cannot come from a folder's settings.json in a
+    // multi-root workspace and has to live here.
+    "monkeyC.javaPath": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.12.8-hotspot",
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  }
+}

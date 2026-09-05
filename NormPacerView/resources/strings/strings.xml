@@ -1,0 +1,16 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppName">Norm Pacer</string>
+
+    <!--
+        One label for both numbers, naming them in the order they are drawn.
+        "NORM" rather than "NP": Normalized Power and NP are TrainingPeaks
+        trademarks, which a store listing must not use. The rider can replace
+        the whole label through the app settings.
+    -->
+    <string id="combinedLabel">LAP P/NORM</string>
+
+    <string id="customLabelTitle">Label text</string>
+    <string id="customLabelPrompt">Leave empty for LAP P/NORM</string>
+    <string id="showLabelTitle">Show label</string>
+    <string id="showLabelPrompt">Off gives the numbers and bar the whole field</string>
+</strings>

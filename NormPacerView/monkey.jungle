@@ -1,0 +1,12 @@
+project.manifest = manifest.xml
+
+# The launcher icon is one SVG drawn on a 128 px canvas; each device wants
+# it declared at its own pixel size or the compiler warns and rescales.
+# These folders hold the same drawing with only width/height changed, and
+# override the copy in resources/ for the devices listed.
+fenix8solar47mm.resourcePath = $(fenix8solar47mm.resourcePath);resources-icon40
+fenix8solar51mm.resourcePath = $(fenix8solar51mm.resourcePath);resources-icon40
+edge850.resourcePath = $(edge850.resourcePath);resources-icon56
+fenix843mm.resourcePath = $(fenix843mm.resourcePath);resources-icon60
+fenix847mm.resourcePath = $(fenix847mm.resourcePath);resources-icon65
+fenix8pro47mm.resourcePath = $(fenix8pro47mm.resourcePath);resources-icon65

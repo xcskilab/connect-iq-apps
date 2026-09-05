@@ -1,0 +1,9 @@
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!-- Edited from the Garmin Connect phone app or Garmin Express. -->
+    <setting propertyKey="@Properties.customLabel" title="@Strings.customLabelTitle" prompt="@Strings.customLabelPrompt">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+    <setting propertyKey="@Properties.showLabel" title="@Strings.showLabelTitle" prompt="@Strings.showLabelPrompt">
+        <settingConfig type="boolean" />
+    </setting>
+</settings>

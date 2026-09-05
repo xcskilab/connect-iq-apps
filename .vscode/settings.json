@@ -1,0 +1,12 @@
+{
+  // Repo-wide editor preferences only.
+  //
+  // Monkey C settings live in each app's folder (StarterField/.vscode/
+  // settings.json), because the extension resolves a project relative to the
+  // workspace folder that owns manifest.xml. Putting "monkeyC.jungleFiles"
+  // here made this folder look like a project it is not, which is what broke
+  // debug sessions: builds succeeded while the debugger looked for
+  // Garmin\manifest.xml and gave up.
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

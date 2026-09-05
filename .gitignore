@@ -1,0 +1,24 @@
+# ── Connect IQ build output ──────────────────────────────────────────
+bin/
+*.prg
+*.prg.debug.xml
+*.iq
+*.barrel
+
+# ── Signing identity — NEVER commit ──────────────────────────────────
+# The developer key is your publishing identity. It lives outside this
+# repo (see README). These patterns are a safety net, not the strategy.
+*developer_key*
+*.der
+*.pem
+
+# ── Editor / OS ──────────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+Thumbs.db
+Desktop.ini
+.DS_Store

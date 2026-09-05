@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+    Prefer the "Monkey C: Edit Application / Edit Products / Edit Permissions"
+    commands in VS Code over hand-editing this file — they validate against the
+    installed SDK.
+-->
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="de0f438bbb39452b387de9a29288c8ab" type="datafield" name="@Strings.AppName" entry="NormPacerApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="6.0.0">
+        <!--
+            fenix847mm also covers tactix 8 and quatix 8 47/51mm.
+            All fenix 8 variants are targeted, not just the owned model: the
+            Solar variants are 64-color memory-in-pixel, so building for them
+            catches colors that look fine on AMOLED and wash out on MIP.
+        -->
+        <iq:products>
+            <iq:product id="edge850"/>
+            <iq:product id="fenix843mm"/>
+            <iq:product id="fenix847mm"/>
+            <iq:product id="fenix8pro47mm"/>
+            <iq:product id="fenix8solar47mm"/>
+            <iq:product id="fenix8solar51mm"/>
+        </iq:products>
+        <!--
+            Intentionally empty. Activity.Info in a data field needs no
+            permission; every entry here becomes an install-time prompt, so add
+            one only when the code actually requires it.
+        -->
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+        <iq:activityFilter>
+            <iq:activity sport="Toybox.Activity.SPORT_CYCLING" subsport="Toybox.Activity.SUB_SPORT_GENERIC"/>
+        </iq:activityFilter>
+    </iq:application>
+</iq:manifest>
