@@ -11,11 +11,11 @@
   // Add one entry per app as the repo grows.
   "folders": [
     {
-      "path": "StarterField"
+      "path": "NormPacerView"
     },
     {
       "name": "Garmin (repo root)",
-      "path": "."
+      "path": "./NormPacerView"
     }
   ],
 

@@ -13,7 +13,13 @@
             catches colors that look fine on AMOLED and wash out on MIP.
         -->
         <iq:products>
+            <iq:product id="edge1040"/>
+            <iq:product id="edge1050"/>
+            <iq:product id="edge540"/>
+            <iq:product id="edge550"/>
+            <iq:product id="edge840"/>
             <iq:product id="edge850"/>
+            <iq:product id="edgemtb"/>
             <iq:product id="fenix843mm"/>
             <iq:product id="fenix847mm"/>
             <iq:product id="fenix8pro47mm"/>
@@ -32,6 +38,7 @@
         <iq:barrels/>
         <iq:activityFilter>
             <iq:activity sport="Toybox.Activity.SPORT_CYCLING" subsport="Toybox.Activity.SUB_SPORT_GENERIC"/>
+            <iq:activity sport="Toybox.Activity.SPORT_RUNNING" subsport="Toybox.Activity.SUB_SPORT_GENERIC"/>
         </iq:activityFilter>
     </iq:application>
 </iq:manifest>

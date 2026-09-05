@@ -10,7 +10,7 @@
   //     and the project's Jungle Files setting is correct.
   //
   // Launch configurations for an app belong to that app's workspace folder —
-  // see StarterField/.vscode/launch.json. Keeping this file present but empty
+  // see NormPacerView/.vscode/launch.json. Keeping this file present but empty
   // stops VS Code from offering to regenerate the broken defaults.
   "version": "0.2.0",
   "configurations": []
