@@ -21,4 +21,9 @@
   <rect x="12" y="57" width="104" height="14" fill="url(#trend)"/>
   <!-- Zero tick -->
   <rect x="63" y="52" width="2" height="24" fill="#ffffff"/>
+  <!-- App name, split around the horizon -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#ffffff" text-anchor="middle" letter-spacing="2.5">
+    <text x="65" y="40">NORM</text>
+    <text x="65" y="106">PACER</text>
+  </g>
 </svg>
