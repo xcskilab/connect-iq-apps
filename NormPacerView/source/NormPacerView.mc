@@ -246,13 +246,18 @@ class NormPacerView extends WatchUi.DataField {
         var wide =
             dc.getTextWidthInPixels(mLabel, mLabelFont) > (width * 3) / 5;
 
-        // Flush to the inner edge: every pixel of margin there is a pixel
-        // lost to the lens at the other end.
+        // Near the inner edge, but not on it: two half-width slots sit
+        // either side of a divider, and a label flush to it collides with
+        // the neighbour's. The inset is the same sliver margined() leaves
+        // at each end of the value row, so labelFits() already accounts
+        // for it. Every pixel beyond that is a pixel lost to the lens at
+        // the other end.
+        var inset = width / 32;
         if (wide && cutLeft && !cutRight) {
-            mLabelX = width;
+            mLabelX = width - inset;
             mLabelJustify = Graphics.TEXT_JUSTIFY_RIGHT;
         } else if (wide && cutRight && !cutLeft) {
-            mLabelX = 0;
+            mLabelX = inset;
             mLabelJustify = Graphics.TEXT_JUSTIFY_LEFT;
         } else {
             mLabelX = width / 2;

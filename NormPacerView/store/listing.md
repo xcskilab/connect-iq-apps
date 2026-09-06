@@ -49,13 +49,16 @@ Powered by LgLab.
 
 ## Notes for the form
 
-- Category: Data Fields. Activity type: Cycling.
-- Supported devices come from the manifest: fēnix 8 43 mm, 47/51 mm, Pro
-  47 mm, Solar 47 mm and 51 mm (also covers tactix 8 and quatix 8), Edge 850.
-- Icon: `icon-512.png` in this folder, rendered from `icon.svg`.
-- Screenshots: capture from the simulator with File > Save Screen Capture,
-  one per layout that matters (1, 2, 4, and 7 fields on the fēnix 8, 1 and 4
-  on the Edge 850).
+- Category: Data Fields. Activity types: Cycling and Running (the manifest
+  activity filter lists both).
+- Supported devices come from the package, not the form: fēnix 8 43 mm,
+  47/51 mm, Pro 47 mm, Solar 47 mm and 51 mm (also covers tactix 8 and
+  quatix 8), Edge 540, 550, 840, 850, 1040, 1050 and MTB.
+- Icon: `icon-500.png` in this folder, rendered from `icon.svg` (the store requires 500x500 sRGB).
+- Screenshots: PNG files in `screenshots/`, captured on a fēnix 8 Pro and an
+  Edge 850 at native resolution. Upload them in the numbered order: Edge full
+  page with graphs, Edge layouts, fēnix layouts, fēnix two-field with the
+  bezel arc.
 - Do not use "Normalized Power", "NP", "TSS" or "IF" anywhere in the listing;
   they are TrainingPeaks trademarks. The text above describes the method
   ("surge-weighted", "lap norm") and never names the metric.
